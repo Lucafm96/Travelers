@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*-----MENU PRINCIPAL--------*/
+
+.wrapper .header {
+    z-index: 1;
+    background: #22242A;
+    position: fixed;
+    width: calc(100% - 0%);
+    height: 70px;
+    display: flex;
+    top: 0;
+}
+
+.wrapper .header .header-menu {
+    width: calc(100% - 0%);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.wrapper .header .header-menu .title {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.wrapper .header .header-menu .sidebar-btn {
+    color: #fff;
+    position: absolute;
+    margin-left: 240px;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+.wrapper .header .header-menu .sidebar-btn:hover {
+    color: #30CFD0;
+}
+
+.wrapper .header .header-menu ul {
+    display: flex;
+}
+
+.wrapper .header .header-menu ul li a {
+    background: #fff;
+    color: #000;
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-property: background, color;
+}
+
+.wrapper .header .header-menu ul li a:hover {
+    background: #30CFD0;
+    color: #fff;
+}
+
+.wrapper .sidebar {
+    z-index: 1;
+    background: #2F323A;
+    position: fixed;
+    top: 70px;
+    width: 250px;
+    height: calc(100% - 9%);
+    transition: 0.3s;
+    transition-property: width;
+    overflow-y: auto;
+}
+
+.wrapper .sidebar .sidebar-menu {
+    overflow: hidden;
+}
+
+.wrapper .sidebar .sidebar-menu .profile img {
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.wrapper .sidebar .sidebar-menu .profile p {
+    color: #bbb;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item {
+    width: 250px;
+    overflow: hidden;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn {
+    display: block;
+    color: #fff;
+    position: relative;
+    padding: 25px 20px;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn:hover {
+    color: #30CFD0;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn i {
+    margin-right: 20px;
+}
+
+.wrapper .main-container{
+    width: (100% - 250px);
+    margin-top: 70px;
+    margin-left: 250px;
+    padding: 15px;
+    background: #F0F3F4;
+    background-size: cover;
+    height: auto;
+    transition: 0.3s;
+}
+
+.wrapper.collapse .sidebar{
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar .profile img,
+.wrapper.collapse .sidebar .profile p,
+.wrapper.collapse .sidebar a span{
+    display:none;
+}
+
+.wrapper.collapse .sidebar .sidebar-menu .item .menu-btn {
+    font-size: 23px;
+}
+
+.wrapper.collapse .main-container {
+    width: (100% - 70px);
+    margin-left: 70px;
+}
+
+
+.profile {
+    text-align: center;
+}
+
+
+
+/*------------MAIN CONTAINER-------------*/
+
+.main-container-header{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-container-header-post {
+    margin:auto;
+    margin-top: 1em;
+    padding: 1em;
+    width: 70%;
+    height: auto;
+    background-color: #F0F3F4;
+}
+
+.main-container-header-post-content {
+    margin:auto;
+    margin-top: 1em;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-container-header-post-comment {
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+/*-----------login.php------------------*/
+
+.section-login {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/fondo3.jpg");
+}
+
+.login {
+    width: 60%;
+    height: auto;
+    background-color: rgb(34,36,42, 0.7);
+    text-align: center;
+    padding: 1em;
+}
+
+.h1-travelers {
+    font-weight: 100;
+    font-size: 3rem;
+    color: white;
+}
+
+form .user-input {
+    padding: 1em;
+    width: 50%;
+    margin: 1em;
+    border-color: transparent;
+}
+
+.user-input:focus {
+    outline: none;
+}
+
+.user-button {
+    padding: 1em;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #5f775ffa;
+}
+
+.user-button:focus {
+    outline: none;
+}
+
+.user-button:hover {
+    background-color: #FAFAFAFA;
+    transition: 0.5s;
+}
+
+.open-modal {
+    padding: 1em;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #5f775ffa;
+}
+
+.open-modal:hover {
+    background-color: #FAFAFAFA;
+    transition: 0.5s;
+}
+
+/*--------------PROFILE.php--------------------*/
+.main-container-header-profile{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.main-container-header-data {
+    width: 45%;
+    margin: auto;
+    
+}
+
+.main-container-header-data img {
+    width: 50%;
+    float: right;
+}
+
+
+
+
+/*------------CREATEPOST.php---------------*/
+
+.main-container-header-form {
+    text-align: center;
+}
+.post-input {
+    padding: 1vh;
+    width: calc(50% - 10px);
+    margin: 1em;
+}
+
+.post-input-id {
+    display: none;
+}
+
+.post-textarea {
+    width: calc(50% - 10px);
+    margin: 1em;
+    resize: none;
+    height: 30vh;
+}
+
+
+/*------------BODY.PHP-------------*/
+
+.img-post {
+    width: 50vh;
+}
+
+.img-post-user {
+    width: 4em;
+    border-radius: 50%;
+}
+
+.textarea-comment {
+    width: calc(80% - 10px);
+    margin: 1em;
+    resize: none;
+    height: 10vh;
+}
+
+
+/*-------------MODAL WINDOW LOGIN.PHP------------*/
+
+.modal-register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgb(34,36,42);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.modal-register form .user-input {
+    width: 70%;
+    padding: 2%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*------------MEDIA QUERIES LOGIN.PHP-----------*/
+
+@media only screen and (max-width: 1000px) {
+    .login {
+        width: 80%;
+    }
+
+    .modal-register {
+        width: 80%;
+    }
+
+    .post-input {
+        width: 80%;
+    }
+    
+    .post-textarea {
+        width: 80%;
+    }
+
+    .main-container-header-profile {
+        flex-direction: column;
+        
+    }
+
+
+    .main-container-header-data img {
+        float: none;
+        width: 70%;
+    }
+
+    .main-container-header-post {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    form .user-input {
+        width: 80%;
+    }
+
+    .main-container-header-data img {
+        width: 90%;
+    }
+
+    .main-container-header-data h1 {
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+    .h1-travelers {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .modal-register {
+        overflow: auto;
+    }
+
+}
